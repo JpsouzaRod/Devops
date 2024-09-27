@@ -1,4 +1,14 @@
-def call()
+def build()
 {
-	sh "echo hello world"
+	sh "echo build..."
+}
+
+def test()
+{
+	sh "echo build..."
+}
+
+def deploy()
+{
+	sh "echo deploy..."
 }
