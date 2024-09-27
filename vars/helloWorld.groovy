@@ -1,14 +1,14 @@
 def build()
 {
-	sh "echo build..."
+	sh "echo building..."
 }
 
 def test()
 {
-	sh "echo build..."
+	sh "echo testing..."
 }
 
 def deploy()
 {
-	sh "echo deploy..."
+	sh "echo deploying..."
 }
