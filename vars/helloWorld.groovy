@@ -9,7 +9,12 @@ def call()
 			{
 				steps
 				{
-					echo 'hello by vars'
+					script 
+					{
+                   				// Build .NET solution
+                    				bat 'dotnet build StarWarsChallenge.sln'
+                			}
+
 				}
 			}
 
@@ -17,7 +22,11 @@ def call()
 			{
 				steps
 				{
-					echo 'testing vars'
+					script 
+					{
+						sh 'dotnet test StarWarsChallenge.sln'
+				
+					}
 				}
 			}
 		}
