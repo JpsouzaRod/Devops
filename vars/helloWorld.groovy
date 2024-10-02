@@ -12,6 +12,7 @@ def call()
 					script 
 					{
                    				// Build .NET solution
+						sh 'echo $PATH'
                     				sh 'dotnet build StarWarsChallenge.sln'
                 			}
 
