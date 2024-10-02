@@ -12,7 +12,7 @@ def call()
 					script 
 					{
                    				// Build .NET solution
-                    				bat 'dotnet build StarWarsChallenge.sln'
+                    				sh 'dotnet build StarWarsChallenge.sln'
                 			}
 
 				}
