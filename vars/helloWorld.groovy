@@ -5,14 +5,25 @@ def call()
 		
 		stages
 		{
+
+			stage('init')
+			{
+				steps
+				{
+					script 
+					{
+                    				sh 'git clone https://github.com/JpsouzaRod/challenge-back-end-hit.git'
+                			}
+
+				}
+			}
 			stage('build')
 			{
 				steps
 				{
 					script 
 					{
-                   				// Build .NET solution
-						sh 'echo $PATH'
+						sh 'cd challenge-back-end-hit'
                     				sh 'dotnet build StarWarsChallenge.sln'
                 			}
 
