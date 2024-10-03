@@ -12,7 +12,7 @@ def call()
 				{
 					script 
 					{
-                    				sh 'dotnet build StarWarsChallenge.sln'
+                    				sh 'dotnet build StarWarsChallenge/StarWarsChallenge.sln'
                 			}
 
 				}
@@ -24,7 +24,7 @@ def call()
 				{
 					script 
 					{
-						sh 'dotnet test StarWarsChallenge.sln'
+						sh 'dotnet test StarWarsChallenge/StarWarsChallenge.sln'
 				
 					}
 				}
