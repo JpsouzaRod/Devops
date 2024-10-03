@@ -25,6 +25,7 @@ def call()
 				{
 					script 
 					{
+						sh 'cd ${WORKSPACE}/PipelineGroovyTest_master/challenge-back-end-hit/StarWarsChallenge'
                     				sh 'dotnet build StarWarsChallenge.sln'
                 			}
 
