@@ -13,6 +13,8 @@ def call()
 					script 
 					{
 						deleteDir()
+						sh 'git clone https://github.com/JpsouzaRod/challenge-back-end-hit.git'
+
                 			}
 
 				}
@@ -23,7 +25,6 @@ def call()
 				{
 					script 
 					{
-						sh 'cd/var/jenkins_home/workspace/PipelineGroovyTest_develop/StarWarsChallenge'
                     				sh 'dotnet build StarWarsChallenge.sln'
                 			}
 
