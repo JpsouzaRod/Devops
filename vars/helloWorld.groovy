@@ -12,7 +12,7 @@ def call()
 				{
 					script 
 					{
-                    				sh 'git clone https://github.com/JpsouzaRod/challenge-back-end-hit.git'
+						deleteDir()
                 			}
 
 				}
