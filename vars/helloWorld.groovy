@@ -23,7 +23,7 @@ def call()
 				{
 					script 
 					{
-						sh 'cd challenge-back-end-hit'
+						sh 'cd/var/jenkins_home/workspace/PipelineGroovyTest_develop/StarWarsChallenge'
                     				sh 'dotnet build StarWarsChallenge.sln'
                 			}
 
